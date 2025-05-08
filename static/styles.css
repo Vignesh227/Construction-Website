@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: #ffd77b; /* custom background */
+    color: rgb(0, 0, 0);                  /* custom text color */
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+
+    background-color: #ffa023;
+
+    background-color: white;
+}
+
+/* Intro Section CSS*/
+.intro-section{
+  height: 100vh;
+}
+
+.intro-section nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding:2rem;
+    
+}
+.intro-section nav ul li a{
+
+    position: relative;
+    transition: .15s;
+    font-size: min(1rem, 3.5vw);
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: min(3vw, 3rem);
+/* 
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; */
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.intro-section nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #ffa20d; /* underline color */
+    transition: width 0.3s ease;
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+  }
+
+
+/* Main  Content */
+.intro-section .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    height: 80%;
+}
+
+.intro-section .main-content h1{
+
+    /* font-family: "Merriweather", serif; */
+
+    font-size: 6vw;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 min(20rem, 15vw);
+
+    letter-spacing: -.2rem;
+    user-select: none;
+
+
+}
+
+.intro-section .main-content p{
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 3rem 20vw;
+
+    line-height: 2rem;
+
+    user-select: none;
+}
+
+.intro-section .main-content button{
+    transition: .3s;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding:1rem 2rem;
+    background-color: black;
+    color:white;
+
+    color:#ffa023;;
+    border: none;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+.intro-section .main-content button:hover{
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+
+    background-color: transparent;
+    color: black;
+
+    border: 1px solid black;
+}
+
+
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contruction-img{
+    display: block;
+    width: 83%;
+    width: 100%;
+    height: auto;         /* Keeps aspect ratio */
+    object-fit: contain; 
+    user-select: none;
+    margin: 0rem 0rem;
+
+    /* display: none; */
+}
+
+
+
+
+.services-section{
+    margin: 0rem 0rem;
+    padding: 6rem 0rem 8rem;
+    
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: #0a0706;
+    background-color: black;
+
+    background-color: #231f20;
+    background-color: #090909;
+
+}
+
+.services-section .content{
+    position: sticky;
+    top:3rem;
+    margin: 0rem 0rem 3rem;
+}
+.services-section .content h2{
+    /* font-family: "Merriweather", serif; */
+    font-size: 3.4rem;
+    font-weight: 700;
+    text-align: center;
+    /* margin: 0rem 0rem 0rem; */
+    
+    color: white;
+}
+
+.services-section .content p{
+
+    color:white;
+
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight:300;
+    margin: 1rem 0rem  0rem;
+
+    line-height: 2rem;
+}
+
+.services-section .sticky-divs{
+    width:63%;
+    margin: 0rem;
+}
+
+.services-section .sticky-divs .sticky{
+    position: sticky;
+    
+    height:  340px;
+    width: 100%;
+    margin: 2rem 0rem 0rem;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* padding: 2rem 3rem; */
+
+}
+.services-section .sticky-divs .sticky .sticky-content{
+    width: 50%;
+    margin: 0rem 6rem 0rem 5rem;
+}
+
+.services-section .sticky-divs .sticky .sticky-content h3{
+    /* color:red; */
+
+    font-size: 2.2rem;
+}
+.services-section .sticky-divs .sticky .sticky-content p{
+    /* color:red; */
+
+    font-size: 1rem;
+    margin-top: 1rem;
+    color:rgb(39, 39, 39)
+}
+.services-section .sticky-divs .sticky img{
+    width:35%;
+    max-height: 100%; 
+    object-fit: contain;
+    margin-right: 3rem;;
+}
+
+
+
+ /* 1 */
+ .building-estimation{
+    top: calc(210px);
+    background-color: rgb(255, 255, 255);
+}
+
+/* 2 */
+.electrical-plumbing{
+    top: calc(210px + 15px);
+    background-color: #fff3e1;
+}
+.electrical-plumbing img{
+    /* margin-right: 2rem; */
+}
+
+/* 3 */
+.two-d-plan{
+    top: calc(210px + 30px);
+    background-color: #ffe1b3;
+}
+
+/* 4 */
+.three-d-plan{
+    top:calc(210px + 45px);
+    background-color: rgb(255, 207, 140);
+}
+.three-d-plan img{
+    max-height: 105% !important;
+    border-radius: 20px;
+
+    margin-right: 4rem !important;
+}
+
+/* 5 */
+.walkthrough-video{
+    top:calc(210px + 60px);
+    background-color: rgb(255, 194, 108);
+}
+
+/* 6 */
+.loan-approval{
+    top:calc(210px + 75px);
+    background-color: rgb(255, 198, 124);
+    background-color: rgb(255, 179, 72);
+    
+}
+
+/* 7 */
+.building-construction{
+    top:calc(210px + 90px);
+    background-color: rgb(255, 146, 29);
+}
+
+
+
+
+
+
+
+
+
+
+.projects-section{
+    height:100vh;
+    /* background-color: grey;
+     */
+
+    border: 1px solid rgb(0, 0, 0);
+
+    margin: 10rem 10rem;
+
+    border-radius: 20px;;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 479px) {
+    .intro-section .main-content {
+        height: 70%;
+    }
+    .intro-section .main-content h1{
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
+    
+    .intro-section .main-content p{
+        font-size: 1.1rem;
+        margin: 2rem 2rem;
+    }
+
+    .intro-section .main-content button{
+        font-size: 1rem;
+        padding:.9rem 1.5rem;
+    }
+    .services-section .content h2{
+        font-family: "Merriweather", serif;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        margin: 5rem 1rem 0rem;
+    
+        color: white;
+    }
+    
+  }
