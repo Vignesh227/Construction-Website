@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="icon" href="images/company-logo.jpg" type="image/png">
+    <link rel="stylesheet" href="css/styles copy.css">
+    <link rel="icon" href="images/company-logo-new.png" type="image/png">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans&display=swap" rel="stylesheet">
+    
     <title>TR Builders</title>
 
 </head>
@@ -15,23 +17,55 @@
         <section class="intro-section" id="intro-section">
             <div class="navbar">
                 <nav>
-                    <ul>
+                    <div class="nav-brand">
+                        <img src="/images/company-logo-new.png" alt="company logo" width="30" height="30">
+                        <a href="#intro-section" >TR Builders</a>
+                    </div>
+                    
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
                         <li><a href="#intro-section">Home</a></li>
                         <li><a href="#services-section">Services</a></li>
                         <li><a href="#projects-section">Projects</a></li>
-                        <li><a href="#contacts-section">Contact us</a></li>
+                        <li><a href="#about-section">About us</a></li>
+                        <li class="nav-btn-container">
+                        <a href="#services-section">
+                                <button class="nav-btn"><span>Know More</span></button>
+                        </a>
+                        </li>
                     </ul>
+                    <!-- Stand-alone button for desktop (hidden on mobile) -->
+                    <a href="#services-section" class="nav-btn-desktop" style="display:none;">
+                        <button class="nav-btn"><span>Know More</span></button>
+                    </a>
                 </nav>
             </div>
 
-            <div class="main-content">
-                <h1>Turn Your Dream Projects Into Reality with TR&nbsp;Builders</h1>
+            <div class="main">
+                <div class="main-content">
+                <!-- <h1>Turn Your Dream Projects Into Reality with TR&nbsp;Builders</h1> -->
+                <h1>Turn your dream projects into reality with TR&nbsp;Builders</h1>
                 <p>At TR Builders, we combine expert craftsmanship, modern design,
                      and a commitment to excellence to bring your ideas to life. 
                      Whether you're building from the ground up or transforming an 
-                     existing space, we’re here to build with precision, passion, and purpose.</p>
-                <button>Get in touch</button>
+                     existing space, we're here to build with precision, passion, and purpose.</p>
+                    <div class="buttons">
+                        <a href="#about-section"><button class="btn-one"><span>Get in Touch</span></button></a>
+                        <a href="#services-section"><button class="btn-two"><span>Know More</span></button></a>
+                    </div>
+                
+                </div>
+                <div class="main-content-images">
+                    <div class="images img-one"></div>
+                    <div class="images img-two"></div>
+                </div>
             </div>
+            
         </section>
 
 
@@ -40,46 +74,95 @@
         <!-- <img class="contruction-img" src="images/construction-wide.jpg" alt="construction image"> -->
         <div class="image">
             <!-- <img class="contruction-img" src="images/construction-upscaled.png" alt="construction image"> -->
-            <img class="contruction-img" src="images/construction2.png" alt="construction image"> 
+            <!-- <img class="contruction-img" src="images/construction2.png" alt="construction image">  -->
         </div>
         
         <!-- <img src="images/construction.jpg" alt="construction image"> -->
 
+        
 
-
-        <section class="services-section" id="services-section">
+        <section class="page-content-wrapper" >
+            <section class="services-section" id="services-section" >
 
             <div class="content">
                 <h2>Our Services</h2>
                 <p>We offer a variety of services to bring your vision to life with quality and care</p>
             </div>
-            
+        
+            <!-- <div class="zwc-stats-svg-wrapper" style="width: 100%; position: sticky; top: 10rem; z-index: 0; margin-top: -3rem; margin-bottom: -70px;">
+                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1518.05 460.59">
+                    <defs>
+                        <style>.cls-1{fill:none}</style>
+                        <linearGradient id="zwc-stats-gradient-green" x1="0" y1="0" x2="150" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="transparent" offset="0"></stop>
+                            <stop stop-color="#48ce82" offset="1"></stop>
+                        </linearGradient>
+                        <linearGradient id="zwc-stats-gradient-purple" x1="0" y1="0" x2="150" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="transparent" offset="0"></stop>
+                            <stop stop-color="#4852fa" offset="1"></stop>
+                        </linearGradient>
+                        <linearGradient id="zwc-stats-gradient-blue" x1="0" y1="0" x2="150" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="transparent" offset="0"></stop><stop stop-color="#2b80f2" offset="1"></stop>
+                        </linearGradient>
+                        <linearGradient id="zwc-stats-lines-path" x1="0" y1="0" x2="100%" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="transparent " offset="0%"></stop><stop stop-color="#0b92f080" offset="10%"></stop>
+                            <stop stop-color="#3de9a880" offset="90%"></stop><stop stop-color="transparent" offset="100%"></stop>
+                        </linearGradient>
+                        <linearGradient id="zwc-stats-lines-gradient" x1="0" y1="0" x2="80" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="transparent " offset="0"></stop>
+                            <stop stop-color="white" offset="1"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path class="cls-1" stroke="url(#zwc-stats-lines-path)" d="m.32,12.1c69.99,57.44,135.77,89.56,180.83,107.64,16.32,6.55,56.07,21.74,109.59,33.65,56.36,12.55,105.62,16.48,143.24,17.26h601.53s129.33,5.28,253.65-38.56c118.34-40.62,171-85.09,228.46-131.7"></path>
+                    <path class="cls-1" stroke="url(#zwc-stats-lines-path)" d="m.32,233.69c399.07-2.43,665.2-3.65,798.37-3.65,179.56,0,718.87,3.65,718.87,3.65"></path>
+                    <path class="cls-1" stroke="url(#zwc-stats-lines-path)" d="m1517.55,126.77s-135.01,63.27-338.02,70.99c0,0-85.72,5.44-144.59,3.69-58.57.02-600.73.18-600.73.18l-96.19-1.77S150.2,192.98.32,133.16"></path>
+                    <path class="cls-1" stroke="url(#zwc-stats-lines-path)" d="m.43,448.49s146.75-140.13,403.05-157.23l14.15-.78c8.25-.46,16.51-.68,24.78-.67l630.9.88c9.66.01,19.33.35,28.97,1l12.06.82s217.47,6.03,403.4,167.69"></path>
+                    <path class="cls-1" stroke="url(#zwc-stats-lines-path)" d="m1517.51,334.13s-146.61-68.28-345.96-71.49l-50.46-2.48-724.4-.2-53.71.99S148.8,267.41.27,327.75"></path>
+                    <line x1="0" y1="0" x2="150" y2="0" stroke="url(#zwc-stats-gradient-purple)" stroke-width="3" stroke-linecap="round" transform="translate(-120,0)" vector-effect="non-scaling-stroke" class="active">
+                        <animateMotion dur="3s" repeatCount="indefinite" path="m.32,12.1c69.99,57.44,135.77,89.56,180.83,107.64,16.32,6.55,56.07,21.74,109.59,33.65,56.36,12.55,105.62,16.48,143.24,17.26h601.53s129.33,5.28,253.65-38.56c118.34-40.62,171-85.09,228.46-131.7" rotate="auto" begin="1"></animateMotion>
+                    </line>
+                    <line x1="0" y1="0" x2="150" y2="0" stroke="url(#zwc-stats-gradient-blue)" stroke-width="2.5" stroke-linecap="round" transform="translate(-120,0)" vector-effect="non-scaling-stroke" class="active">
+                        <animateMotion dur="2.5s" repeatCount="indefinite" path="m.32,233.69c399.07-2.43,665.2-3.65,798.37-3.65,179.56,0,718.87,3.65,718.87,3.65" rotate="auto" begin="5"></animateMotion>
+                    </line>
+
+                    <line x1="0" y1="0" x2="150" y2="0" stroke="url(#zwc-stats-gradient-green)" stroke-width="2.5" stroke-linecap="round" transform="translate(-120,0)" vector-effect="non-scaling-stroke" class="active">
+                        <animateMotion dur="4s" repeatCount="indefinite" path="m1517.55,126.77s-135.01,63.27-338.02,70.99c0,0-85.72,5.44-144.59,3.69-58.57.02-600.73.18-600.73.18l-96.19-1.77S150.2,192.98.32,133.16" rotate="auto" begin="3"></animateMotion>
+                    </line>
+
+                    <line x1="0" y1="0" x2="150" y2="0" stroke="url(#zwc-stats-gradient-green)" stroke-width="2.5" stroke-linecap="round" transform="translate(-120,0)" vector-effect="non-scaling-stroke" class="active">
+                        <animateMotion dur="3.5s" repeatCount="indefinite" path="m.43,448.49s146.75-140.13,403.05-157.23l14.15-.78c8.25-.46,16.51-.68,24.78-.67l630.9.88c9.66.01,19.33.35,28.97,1l12.06.82s217.47,6.03,403.4,167.69" rotate="auto" begin="2"></animateMotion>
+                    </line>
+
+                    <line x1="0" y1="0" x2="150" y2="0" stroke="url(#zwc-stats-gradient-purple)" stroke-width="3" stroke-linecap="round" transform="translate(-120,0)" vector-effect="non-scaling-stroke" class="active">
+                        <animateMotion dur="4.5s" repeatCount="indefinite" path="m1517.51,334.13s-146.61-68.28-345.96-71.49l-50.46-2.48-724.4-.2-53.71.99S148.8,267.41.27,327.75" rotate="auto" begin="0"></animateMotion>
+                    </line>
+                </svg>
+            </div> -->
 
             <div class="sticky-divs">
                 
 
                 <!-- 1 -->
-                <div class="sticky building-estimation">
-                    <div class="sticky-content">
-                        <h3>Project Cost Estimation</h3>
-                        <p>This is a sample text for building estimation.
-                            This is a sample text for building estimation.
-                            This is a sample text for building estimation.
-                        </p>
-                    </div>
-                    <img src="images/man-using-lap.avif" alt="building estimation image">
-                </div>
-
-                <!-- 2 -->
-                <div class="sticky  electrical-plumbing">
+                 <div class="sticky  electrical-plumbing">
                     <div class="sticky-content">
                         <h3>MEP Drawings (Mechanical, Electrical & Plumbing)</h3>
                         <p>This is a sample text for building estimation.
                             This is a sample text for building estimation.
+                        </p>
+                    </div>
+                    <img src="images/mep-drawings-bg-removed.png" alt="electrical-plumbing image">
+                </div>
+               
+
+                <!-- 2 -->
+                 <div class="sticky building-estimation">
+                    <div class="sticky-content">
+                        <h3>Project Cost Estimation</h3>
+                        <p>This is a sample text for building estimation.
                             This is a sample text for building estimation.
                         </p>
                     </div>
-                    <img src="images/electrical-upscaled.png" alt="building estimation image">
+                    <img src="images/rupees logo.png" alt="building estimation image">
                 </div>
 
                 <!-- 3 -->
@@ -88,10 +171,9 @@
                         <h3>2D Construction Drawings</h3>
                         <p>This is a sample text for building estimation.
                             This is a sample text for building estimation.
-                            This is a sample text for building estimation.
                         </p>
                     </div>
-                    <img src="images/2d-drawings.png" alt="building estimation image">
+                    <img src="images/2d-drawings.png" alt="2D plan image">
                 </div>
 
                 
@@ -101,10 +183,9 @@
                         <h3>3D Interior & Exterior Elevations</h3>
                         <p>This is a sample text for building estimation.
                             This is a sample text for building estimation.
-                            This is a sample text for building estimation.
                         </p>
                     </div>
-                    <img src="images/elevation2.png" width="700px" alt="building estimation image">
+                    <img src="images/elevation3.png" width="700px" alt="3D plan image">
                 </div>
                 
 
@@ -114,22 +195,21 @@
                         <h3>3D Walkthrough Video Editing</h3>
                         <p>This is a sample text for building estimation.
                             This is a sample text for building estimation.
-                            This is a sample text for building estimation.
                         </p>
                     </div>
-                    <img src="images/walkthrough-video.png" alt="building estimation image">
+                    <img src="images/walkthrough-video.png" alt="walkthrough-video image">
                 </div>
 
                 <!-- 6 -->
                 <div class="sticky  loan-approval">
                     <div class="sticky-content">
-                        <h3>Loan and Project Approvals</h3>
+                        <h3>Approvals and Loan Services</h3>
                         <p>This is a sample text for building estimation.
-                            This is a sample text for building estimation.
                             This is a sample text for building estimation.
                         </p>
                     </div>
-                    <img src="images/loan-approval-old.png" alt="building estimation image">
+                    <!-- <img src="images/loan-approval-old.png" alt="building estimation image"> -->
+                    <img src="images/approval-tick.png" alt="approval image">
                 </div>
 
                 <!-- 7 -->
@@ -138,22 +218,378 @@
                         <h3>Residential & Commercial Construction</h3>
                         <p>This is a sample text for building estimation.
                             This is a sample text for building estimation.
-                            This is a sample text for building estimation.
                         </p>
                     </div>
-                    <img src="images/building-construction.png" alt="building estimation image">
+                    <!-- <img src="images/building-construction.png" alt="building estimation image"> -->
+                    <img src="images/construction-hammers.png" alt="construction image">
                 </div>
-                
-
-                
-                
 
             </div>
         </section>
 
-        <section class="projects-section" id="projects-section">
-            Workinggg on it : )..
-        </section>
+        <!-- <div class="separator">
+            
+        </div> -->
+        
+        <style>
+                .separator{
+                    background-color: rgb(217, 217, 217);
+                    height: 2px;
+                    margin:6rem 20rem 0rem;
+                }
+            </style>
+
+        
+        <section class="projects-section" id = "projects-section">
+        <div class="section-header">
+            <h2>Our Projects</h2>
+            <p>Crafting exceptional spaces with precision, care, and attention to detail</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project">
+                <div class="project-info">
+                    <div class="project-location">Avaniyapuram</div>
+                    <div class="project-name">Modern Residential Complex</div>
+                    <div class="project-description">
+                        A contemporary housing development featuring sustainable design principles and premium finishes throughout.
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" data-carousel="1">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="images/p1_picture1.png" alt="Modern Residential Complex - Exterior View" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/p1_picture2.jpg" alt="Modern Residential Complex - Interior Design" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/p1_picture3.jpg" alt="Modern Residential Complex - Amenities" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/p1_picture4.jpeg" alt="Modern Residential Complex - Amenities" />
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-nav next">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button class="carousel-indicator active" data-slide="0"></button>
+                            <button class="carousel-indicator" data-slide="1"></button>
+                            <button class="carousel-indicator" data-slide="2"></button>
+                            <button class="carousel-indicator" data-slide="3"></button>
+                        </div>
+                        <div class="carousel-progress">
+                            <div class="carousel-progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <div class="project-info">
+                    <div class="project-location">Madurai</div>
+                    <div class="project-name">Modern Living Space</div>
+                    <div class="project-description">
+                        Simple and elegant homes made for people who enjoy peace, light, and smart design.
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" data-carousel="2">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="images/p2_picture1.jpg" alt="Commercial Office Tower - Exterior" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/p2_picture2.jpg" alt="Commercial Office Tower - Lobby" />
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-nav next">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button class="carousel-indicator active" data-slide="0"></button>
+                            <button class="carousel-indicator" data-slide="1"></button>
+                        </div>
+                        <div class="carousel-progress">
+                            <div class="carousel-progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <div class="project-info">
+                    <div class="project-location">3D Modelling</div>
+                    <div class="project-name">Luxury Villa (3D Model)</div>
+                    <div class="project-description">
+                        A detailed 3D model of a luxury villa showcasing modern architecture, spacious design, and high-end features..
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" data-carousel="3">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="images/p3_picture1.jpg" alt="Luxury Villa Estate - Villa Exterior" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/p3_picture2.jpg" alt="Luxury Villa Estate - Interior Living" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/p3_picture3.jpg" alt="Luxury Villa Estate - Interior Living" />
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-nav next">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button class="carousel-indicator active" data-slide="0"></button>
+                            <button class="carousel-indicator" data-slide="1"></button>
+                            <button class="carousel-indicator" data-slide="2"></button>
+                        </div>
+                        <div class="carousel-progress">
+                            <div class="carousel-progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+        <!-- <div class="separator">
+            
+        </div>
+
+        <style>
+                .separator{
+                    background-color: rgb(217, 217, 217);
+                    height: 2px;
+                    margin:6rem 30rem 0rem;
+                }
+            </style> -->
+
+
+
+
+        <section class="why-us" id="why-us">
+        <div class="section-title">
+            <h2>Why Choose Us?</h2>
+        </div>
+
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature">
+                <div class="feature-content">
+                    <span class="feature-label">Creative Solutions</span>
+                    <h3 class="feature-title">From concept to completion</h3>
+                    <p class="feature-description">
+                        Whether you're sketching early ideas or adding final touches to your project, we fit naturally into your creative process, helping you experience your design before it's built.
+                    </p>
+                </div>
+                <div class="feature-media">
+                    <video 
+                        class="feature-video" 
+                        src="images/creative-video.mp4"
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline
+                    ></video>
+                    <div class="feature-overlay"></div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature">
+                <div class="feature-content">
+                    <span class="feature-label">Quality Craftsmanship</span>
+                    <h3 class="feature-title">Bring spaces to life with precision in every detail</h3>
+                    <p class="feature-description">
+                        Our skilled craftsmen bring decades of experience to every project, ensuring that each element is executed with meticulous attention to detail and uncompromising quality standards.
+                    </p>
+                </div>
+                <div class="feature-media">
+                    <video 
+                        class="feature-video" 
+                        src="images/life-video.mp4"
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline
+                    ></video>
+                    <div class="feature-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About section -->
+     <section class="about-section" id="about-section">
+        <div class="section-header">
+            <h1>About Us</h1>
+            <p>We are a team of dedicated construction professionals committed to delivering excellence in every project. With years of combined experience and a passion for innovation, we transform your vision into reality..</p>
+        </div>
+        
+        <div class="team-grid">
+            <div class="profile-card">
+                <div class="profile-avatar">RP</div>
+                <div class="profile-info">
+                    <h2>Ruthra Prasath</h2>
+                    <p class="occupation">Structural Engineer</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span class="contact-text">
+                                <a href="mailto:trbuilders.mdu@gmail.com">trbuilders.mdu@gmail.com</a>
+                            </span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span class="contact-text">
+                                <a href="tel:+91 6383480800">+91-63834-80800</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card">
+                <div class="profile-avatar">T</div>
+                <div class="profile-info">
+                    <h2>Thangaraj</h2>
+                    <p class="occupation">Structural Engineer</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span class="contact-text">
+                                <a href="mailto:trbuilders.mdu@gmail.com">trbuilders.mdu@gmail.com</a>
+                            </span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span class="contact-text">
+                                <a href="tel:+91 7708858555">+91-77088-58555</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+
+    <div class="ready">
+        <h3 class="ready-heading">Ready to transfrom your ideas to life?</h3>
+        <p class="ready-paragraph">Collaborate with us to bring your dream project to reality.</p>
+        <a href="#about-section"><button>Book an appointment</button></a>
+    </div>
+    <!-- Footer Section -->
+    <section class="footer-section" id="footer-section">
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"><img src="images/company-logo-new.png" alt="company logo" width="32" height="32"></div>  
+                    
+                    <span class="logo-text">TR Builders</span>
+                </div>
+                <p class="brand-description">
+                    TR Builders transforms architectural vision into enduring reality — blending innovation, craftsmanship, and reliability in every project we undertake. From residential spaces to commercial landmarks, we build with purpose, precision, and a commitment to excellence.
+                </p>
+                <div class="social-links">
+                    <a href="https://wa.me/916383480800?text=Hi%20TR%20Builders%2C%20I%27m%20interested%20in%20your%20projects" target="_blank" class="social-link wap-link">
+                        <img src="images/whatsapp.png" alt="whatsapp-logo" class="whatsapp-logo icon-logo">
+                        Whatsapp
+                    </a>
+                    <a href="mailto:trbuilders.mdu@gmail.com" target="_blank" class="social-link gmail-link">
+                        <img src="images/gmail.png" alt="gmail-logo" class="gmail-logo icon-logo">
+                        Gmail
+                    </a>
+                </div>
+            </div>
+            
+            <!-- <div class="footer-section">
+                <h3 class="section-title">Product</h3>
+                <a href="#" class="section-link">Features</a>
+                <a href="#" class="section-link">Pricing</a>
+                <a href="#" class="section-link">Integrations</a>
+                <a href="#" class="section-link">Changelog</a>
+            </div> -->
+
+            <div class="footer-section">
+                <h3 class="section-title">Works</h3>
+                <a href="#projects-section" class="section-link">Projects</a>
+                <a href="#why-us" class="section-link">Vision</a>
+            </div> 
+
+            <div class="footer-section">
+                <h3 class="section-title">Explore</h3>
+                <a href="#intro-section" class="section-link">Home</a>
+                <a href="#services-section" class="section-link">Services</a>
+                <a href="#about-section" class="section-link">About</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="legal-links">
+                <img src="images/pin.png" alt="location icon" width="24" height="24" style="transform: translateY(-4px);">
+                <a class="address legal-link">RS No: 139/1, Plot No: 6, Arunjunai Nagar Extension, Avaniapuram By-pass, D-Mart Opposite, Madurai South, 625012</a>
+            </div>
+            <p class="copyright">© 2025 TR Builders. All rights reserved.</p>
+            
+        </div>
+    </footer>
+    </section>
     </main>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>

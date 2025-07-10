@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Construction Engineers</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .about-us-container {
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+      flex: 1 1 400px;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .profile-card:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #ddd;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #222;
+    }
+
+    .profile-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .profile-bio {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: center;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .about-us-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-card {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about-us-container" aria-label="About Us - Construction Engineers">
+    <article class="profile-card">
+      <div class="profile-photo" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');" aria-label="Photo of John Doe"></div>
+      <h2 class="profile-name">John Doe</h2>
+      <p class="profile-title">Senior Construction Engineer</p>
+      <p class="profile-bio">
+        With over 15 years of experience, John specializes in sustainable building designs and project management. His expertise ensures projects are delivered on time and within budget while maintaining the highest safety standards.
+      </p>
+    </article>
+
+    <article class="profile-card">
+      <div class="profile-photo" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg');" aria-label="Photo of Jane Smith"></div>
+      <h2 class="profile-name">Jane Smith</h2>
+      <p class="profile-title">Structural Engineer</p>
+      <p class="profile-bio">
+        Jane brings innovative structural solutions to complex projects. Her analytical skills and attention to detail guarantee structural integrity and compliance with all engineering codes and regulations.
+      </p>
+    </article>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<svg width="2560" height="1232" viewBox="0 0 2560 1232" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <style>
+            .moving-lines path {
+            opacity: 0.65;
+            }
+        </style>
+    </g>
+    <mask id="mask0_862_210" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+        width="2560" height="1232">
+        <path
+            d="M0 163H547H573V1232H1974V245L2560 144V0H1938V95H1326V0H1270H1208V95H623V0H585V100H0V163Z"
+            fill="#D8EE97" />
+    </mask>
+    <g mask="url(#mask0_862_210)">
+        <g class="path-way" opacity="0.1">
+            <path d="M1953 14L1953 1233" stroke="#E42527" />
+            <path d="M1728 89L1728 1233" stroke="#E42527" />
+            <path d="M1503 89L1503 1233" stroke="#E42527" />
+            <path d="M1278 14L1278 1233" stroke="#E42527" />
+            <path d="M1053 91L1053 1233" stroke="#E42527" />
+            <path d="M828 89L828 1233" stroke="#E42527" />
+            <path d="M603 15L603 1234" stroke="#E42527" />
+            <path d="M602 1030L1953 1030" stroke="#E42527" />
+            <path d="M603 802.995L1954 803" stroke="#E42527" />
+            <path d="M603 576L1953 576" stroke="#E42527" />
+            <path d="M603 351L1954 351" stroke="#E42527" />
+            <path d="M0 126L2560 126" stroke="#E42527" />
+            <path
+                d="M1728 556C1728.68 566.752 1737.25 575.321 1748 576C1737.25 576.679 1728.68 585.248 1728 596C1727.32 585.248 1718.75 576.679 1708 576C1718.75 575.321 1727.32 566.752 1728 556Z"
+                fill="#fff" stroke="#E42527" />
+        </g>
+        <g class="moving-lines">
+            <path opacity="0.76" d="M0 0L0 41" stroke="url(#paint0_linear_862_210)">
+                <animateMotion dur="10s" repeatCount="indefinite" path="M828 89L828 1233"></animateMotion>
+            </path>
+            <path opacity="0.76" d="M0 0L0 41" stroke="url(#paint1_linear_862_210)">
+                <animateMotion dur="10s" repeatCount="indefinite" path="M1728 89L1728 1233"></animateMotion>
+            </path>
+            <path opacity="0.76" d="M0 0H41" stroke="url(#paint2_linear_862_210)">
+                <animateMotion dur="10s" repeatCount="indefinite" path="M0 126L2560 126"></animateMotion>
+            </path>
+            <path opacity="0.76" d="M0 0H41" stroke="url(#paint3_linear_862_210)">
+                <animateMotion dur="10s" repeatCount="indefinite" path="M603 576L1953 576"></animateMotion>
+            </path>
+        </g>
+        <g class="circle">
+            <circle cx="828" cy="126" r="20" fill="white" />
+            <circle cx="828" cy="351" r="20" fill="white" />
+            <circle cx="828" cy="578" r="20" fill="white" />
+            <circle cx="828" cy="803" r="20" fill="white" />
+            <circle cx="828" cy="1028" r="20" fill="white" />
+            <circle cx="603" cy="126" r="20" fill="white" />
+            <circle cx="603" cy="351" r="20" fill="white" />
+            <circle cx="603" cy="578" r="20" fill="white" />
+            <circle cx="603" cy="801" r="20" fill="white" />
+            <circle cx="603" cy="1026" r="20" fill="white" />
+            <circle cx="1053" cy="126" r="20" fill="white" />
+            <circle cx="1053" cy="351" r="20" fill="white" />
+            <circle cx="1053" cy="578" r="20" fill="white" />
+            <circle cx="1053" cy="803" r="20" fill="white" />
+            <circle cx="1053" cy="1028" r="20" fill="white" />
+            <circle cx="1278" cy="126" r="20" fill="white" />
+            <circle cx="1278" cy="351" r="20" fill="white" />
+            <circle cx="1278" cy="578" r="20" fill="white" />
+            <circle cx="1278" cy="803" r="20" fill="white" />
+            <circle cx="1278" cy="1028" r="20" fill="white" />
+            <circle cx="1503" cy="126" r="20" fill="white" />
+            <circle cx="1503" cy="351" r="20" fill="white" />
+            <circle cx="1503" cy="578" r="20" fill="white" />
+            <circle cx="1503" cy="803" r="20" fill="white" />
+            <circle cx="1503" cy="1028" r="20" fill="white" />
+            <circle cx="1728" cy="126" r="20" fill="white" />
+            <circle cx="1728" cy="351" r="20" fill="white" />
+            <!-- <circle cx="1728" cy="578" r="20" fill="white" /> -->
+            <circle cx="1728" cy="803" r="20" fill="white" />
+            <circle cx="1728" cy="1028" r="20" fill="white" />
+            <circle cx="1953" cy="126" r="20" fill="white" />
+            <circle cx="1953" cy="351" r="20" fill="white" />
+            <circle cx="1953" cy="578" r="20" fill="white" />
+            <circle cx="1953" cy="803" r="20" fill="white" />
+            <circle cx="1953" cy="1028" r="20" fill="white" />
+        </g>
+    </g>
+    <path
+        d="M828 331C828.679 341.752 837.248 350.321 848 351C837.248 351.679 828.679 360.248 828 371C827.321 360.248 818.752 351.679 808 351C818.752 350.321 827.321 341.752 828 331Z"
+        fill="#fff" stroke="#E42527" style="opacity: 0.1;" />
+    <defs>
+        <linearGradient id="paint0_linear_862_210" x1="828.5" y1="0" x2="828.5" y2="41"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFC4C4" />
+            <stop offset="0.305" stop-color="#E42527" />
+            <stop offset="0.71" stop-color="#ED5758" />
+            <stop offset="1" stop-color="#FFC4C4" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_862_210" x1="1728.5" y1="0" x2="1728.5" y2="41"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFC4C4" />
+            <stop offset="0.305" stop-color="#E42527" />
+            <stop offset="0.71" stop-color="#ED5758" />
+            <stop offset="1" stop-color="#FFC4C4" />
+        </linearGradient>
+        <linearGradient id="paint2_linear_862_210" x1="0" y1="125.5" x2="41" y2="125.5"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFC4C4" />
+            <stop offset="0.305" stop-color="#E42527" />
+            <stop offset="0.71" stop-color="#ED5758" />
+            <stop offset="1" stop-color="#FFC4C4" />
+        </linearGradient>
+        <linearGradient id="paint3_linear_862_210" x1="0" y1="575.5" x2="41" y2="575.5"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFC4C4" />
+            <stop offset="0.305" stop-color="#E42527" />
+            <stop offset="0.71" stop-color="#ED5758" />
+            <stop offset="1" stop-color="#FFC4C4" />
+        </linearGradient>
+    </defs>
+</svg>
