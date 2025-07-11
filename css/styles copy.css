@@ -186,17 +186,6 @@ body{
   }
 
 
-  .intro-section::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    filter: brightness(35%);
-    z-index: -1; /* Puts the background behind the content */
-    overflow: hidden;
-
-    animation: bacsk 18s infinite;
-}
 /* The Keyframes*/
 @keyframes back {
   0%, 100%{
@@ -238,9 +227,9 @@ body{
     justify-content: left;
     align-items: center;
     padding:2.7rem 12rem;
-    margin:2.6rem 0rem 12rem;
+    margin:2.5rem 0rem 12rem;
 
-    transform: translateY(40px);
+    /* transform: translateY(40px); */
     animation: fadeInUp 0.8s ease-out forwards;
 }
 .intro-section .main-content{
@@ -265,25 +254,14 @@ body{
 .intro-section .main-content h1{
 
     font-family: "Merriweather", serif;
-    /* font-family: 'Coolvetica', sans-serif; */
-
-    /* font-family: "DM Sans", sans-serif; */
     font-size: 5rem;
+    font-size: min(5rem, 4vw);
     font-weight:300;
-    /* letter-spacing: -1px; */
-    /* margin: 0rem min(30rem, 22vw); */
-
-    /* user-select: none; */
     pointer-events: none;
 
-
-    /* font-family: 'Product Sans Medium', sans-serif; */
-    /* font-family: 'Product Sans Black', sans-serif; */
-    /* font-family: 'General Sans', sans-serif; */
-    /* font-family: "Lora", serif; */
     font-weight: 300;
     color: black;
-    line-height: 6.7rem;
+    line-height: 9.7vh;
 
 }
 
@@ -292,8 +270,6 @@ body{
     font-weight: 300;
 
     line-height: min(2rem, 4vh);
-
-    /* user-select: none; */
     pointer-events: none;
 
     color: black;
@@ -364,24 +340,9 @@ body{
     background-color: rgb(242, 242, 242) !important;
     cursor: pointer;
   }
-/* 
-.intro-section .main-content button::before {
-    border-radius: 20px;
-    transition: 0.3s ease-out;
-    position: absolute;
-    content: "";
-    background-color: #000000;
-    top: 0; left: 0; right: 0; 
-    height: 0%; width: 100%; 
-    }
-.intro-section .main-content button:hover::before {
-     height: 100%;
-} */
+
 .page-content-wrapper{
     position: relative;
-    /* margin-top: 100vh;; */
-    /* background-color: white; */
-    /* z-index: 20; */
 
 }
 
@@ -625,6 +586,42 @@ body{
     }
 }
 
+@media (min-width: 1501px) and (max-width:1800px) {
+
+    .intro-section .main{
+        padding:1.7rem 12rem;
+        /* margin:0rem 0rem 12rem; */
+    }
+    .intro-section .main-content{
+        gap: 1.3rem;
+        
+        width: 60%;
+        margin-right:4rem;
+
+    }
+
+    .intro-section .main .main-content-images{
+        width: 45%; height: 100%;
+        height: 430px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        animation: back 18s infinite;
+        border-radius: 25px;
+    }
+    .intro-section .main-content p{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .services-section .sticky-divs{
+        width:78.5% !important;
+        margin-top: 1.5rem;
+        
+        /* margin-bottom: -480px; */
+    }
+
+}
+
 /* Tablet-specific layout (769px–1024px) */
 @media (min-width: 769px) and (max-width: 1500px) {
     /* Navbar tweaks */
@@ -823,6 +820,7 @@ body{
 .services-section .sticky-divs .sticky .sticky-content p{
     /* color:red; */
     font-family: "Merriweather", serif;
+    font-weight: 100;;
     font-size: min(1rem, 2vw);
     margin-top: 1rem;
     color:rgb(39, 39, 39);
@@ -846,6 +844,7 @@ body{
 .electrical-plumbing{
     top: calc(14rem);
     background-color: #fefefe !important;
+    background-color: #fbfbfb !important;
     border: 1px solid #c8c8c8;
 }
 
@@ -855,12 +854,13 @@ body{
     top: calc(14rem + 15px) !important;
     background-color: #9c3fff;
     background-color: #ffe32c;
-    border: 1px solid #c5b33a;
+    background-color: #a8e3ff;
+    border: 1px solid #59caff;
     color: rgb(0, 0, 0);
 }
 
 .building-estimation .sticky-content p{
-    color: rgb(0, 0, 0) !important;
+    color: rgb(44, 44, 44) !important;
 }
 
 /* 3 */
@@ -869,7 +869,7 @@ body{
     background-color: #4b8dff;
     background-color: #6d00eb;
     background-color: #219fff;
-    border: 1px solid #1679c5;
+    border: 1px solid #0a72c2;
 
     color: rgb(255, 255, 255);
 }
@@ -881,12 +881,13 @@ body{
 .three-d-plan{
     top: calc(14rem + 45px) !important;
     background-color: #0055ff;
-    background-color: #3516ff;
-    border: 1px solid #230cbb;
+    background-color: #634bff;
+    background-color: #003ea9;
+    border: 1px solid #002565;
     color: white;
 }
 .three-d-plan .sticky-content p{
-    color: white !important;
+    color: rgb(238, 238, 238) !important;
 }
 .three-d-plan img{
     height: 155% !important;
@@ -900,18 +901,21 @@ body{
     top: calc(14rem + 60px) !important;
     background-color: #003ea9;
     background-color: #3400ad;
-    border: 1px solid #16004a;
+    background-color: #003ea9;
+    background-color: #00225d; 
+    border: 1px solid #000a1b;
     color: white;
 }
 .walkthrough-video .sticky-content p{
-    color: white !important;
+    color: rgb(232, 232, 232) !important;
 }
 /* 6 */
 .loan-approval{
     top: calc(14rem + 75px) !important;
     background-color: #65b7ff;    
     background-color: #00225d; 
-    border: 1px solid rgb(3, 0, 11);
+    background-color: #00173f; 
+    border: 1px solid rgb(0, 0, 0);
     color: rgb(244, 244, 244) !important;  
 
 }
@@ -920,7 +924,7 @@ body{
     max-height: 70% !important;;
 }
 .loan-approval .sticky-content p{
-    color: white !important;
+    color: rgb(224, 224, 224) !important;
 }
 
 /* 7 */
@@ -941,7 +945,7 @@ body{
 }
 .building-construction .sticky-content p {
     /* top: calc(15rem + 105px) !important; */
-    color: rgb(248, 248, 248) !important;
+    color: rgb(210, 210, 210) !important;
 }
 
 
@@ -957,7 +961,7 @@ body{
     .services-section .sticky-divs .sticky{
         position: sticky;
         /* transform: translateY(-500px); */
-        top: 10.8rem;
+        top: 12.4rem;
         height:  200px;
         margin: 0rem 0rem 1rem;
         padding: 1rem 0rem;
@@ -985,13 +989,13 @@ body{
         line-height: 1.3rem;
     }
     .services-section .sticky-divs{
-        width:100%;
+        width:100% !important;
         margin-top: 1.5rem;
         
         /* margin-bottom: -480px; */
     }
     .services-section{
-        padding: 3rem 20px 1rem 20px;
+        padding: 3rem 16.5px 1rem 16.5px;
     }
 
     .services-section .content{
@@ -1008,39 +1012,39 @@ body{
 
         font-size: 14px;
         line-height: 1.5rem;
-        margin: 1rem 0rem  0rem;
+        margin: 1rem .5rem  1rem;
         pointer-events: none;
     }
     .electrical-plumbing{
-        top: calc(10.8rem);
+        top: calc(12.4rem);
     }
 
     
     /* 2 */
     .building-estimation{
-        top: calc(10.8rem + 15px) !important;
+        top: calc(12.4rem + 15px) !important;
     }
 
     /* 3 */
     .two-d-plan{
-        top: calc(10.8rem + 30px) !important;
+        top: calc(12.4rem + 30px) !important;
     }
     /* 4 */
     .three-d-plan{
-        top: calc(10.8rem + 45px) !important;
+        top: calc(12.4rem + 45px) !important;
     }
     /* 5 */
     .walkthrough-video{
-        top: calc(10.8rem + 60px) !important;
+        top: calc(12.4rem + 60px) !important;
     }
     /* 6 */
     .loan-approval{
-        top: calc(10.8rem + 75px) !important; 
+        top: calc(12.4rem + 75px) !important; 
     }
 
     /* 7 */
     .building-construction{
-        top: calc(10.8rem + 90px) !important;
+        top: calc(12.4rem + 90px) !important;
     }
 
 }
@@ -1550,10 +1554,6 @@ body{
         @media (max-width: 480px) {
             .why-us {
                 padding: 60px 16px;
-            }
-
-            .section-title h2 {
-                /* font-size: 28px; */
             }
 
             .features-grid {
