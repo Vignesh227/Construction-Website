@@ -73,9 +73,7 @@ body{
 }
 
 .nav-brand a{
-    font-family: "Inter", sans-serif;
     font-family: 'General Sans', sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-size: 1.03rem;
     text-decoration: none;
@@ -691,7 +689,6 @@ body{
     .btn-one, .btn-two {
         min-width: 260px;
     }
-
 }
 
 /* Desktop specific styles */
@@ -702,7 +699,7 @@ body{
         justify-content: center;
         gap: 2rem;
     }
-
+    
     /* Center the nav-menu */
     .intro-section nav ul {
         flex: 1;
@@ -717,6 +714,12 @@ body{
     /* Hide button inside list */
     .nav-menu .nav-btn-container {
         display: none;
+    }
+}
+@media (max-width: 769px) {
+    .nav-brand a{
+        font-family: "Merriweather", serif;
+        font-size: .91rem;
     }
 }
 
@@ -1556,6 +1559,7 @@ body{
                 padding: 60px 16px;
             }
 
+
             .features-grid {
                 gap: 60px;
             }
@@ -1890,7 +1894,7 @@ body{
         }
 
         .logo-text {
-            font-size: 18px;
+            font-size: 21px;
             font-weight: 600;
             color: #111827;
         }
@@ -1919,6 +1923,8 @@ body{
             text-decoration: none;
             transition: all 0.2s;
             object-fit:contain; 
+
+            font-size: .85rem;
 
 
         }
